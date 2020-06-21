@@ -1,3 +1,2 @@
 # Android-Security
-Android Security Tool
-Continues To Develop..
+Android Security Tool Continues To Be Developed ..

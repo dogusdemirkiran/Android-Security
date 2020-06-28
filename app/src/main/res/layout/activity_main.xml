@@ -10,7 +10,7 @@
         android:id="@+id/baslik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Android Security!"
+        android:text="Android Security"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:textColor="@color/colorPrimaryDark"
@@ -25,5 +25,14 @@
         android:background="@color/colorPrimaryDark"
         android:layout_marginTop="5dp"
         />
+
+    <Button
+        android:id="@+id/showRunProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:text="Show Running Process"
+        />
+
 
 </RelativeLayout>

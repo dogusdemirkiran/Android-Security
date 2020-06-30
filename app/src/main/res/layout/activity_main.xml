@@ -32,6 +32,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/line1"
         android:text="Show Running Process"
+        android:onClick="showRunningProcess"
+        />
+    <Button
+        android:id="@+id/showPhoneFeatures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showRunProcess"
+        android:text="Show Phone Features"
+        android:onClick="showPhoneFeatures"
         />
 
 

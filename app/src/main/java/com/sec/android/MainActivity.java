@@ -14,22 +14,30 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button;
+    private Button showRunningProcessButton;
+    private Button showPhoneFeaturesButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = findViewById(R.id.showRunProcess);
-        button.setOnClickListener(new View.OnClickListener() {
+        showRunningProcessButton = findViewById(R.id.showRunProcess);
+        showPhoneFeaturesButton = findViewById(R.id.showPhoneFeatures);
+/*
+        showRunningProcessButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Running Process",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
-                startActivity(intent);
+                showRunningProcess();
             }
         });
+
+        showPhoneFeaturesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showPhoneFeatures();
+            }
+        });*/
         //api();
     }
 
@@ -41,6 +49,18 @@ public class MainActivity extends AppCompatActivity {
         }else{
             return false;
         }
+    }
+
+    public void showRunningProcess(View view){
+        Toast.makeText(getApplicationContext(),"Running Process",Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+        startActivity(intent);
+    }
+
+    public void showPhoneFeatures(View view){
+        Toast.makeText(getApplicationContext(),"Phone Features",Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(MainActivity.this,PhoneFeaturesActivity.class);
+        startActivity(intent);
     }
 
     public void api(){

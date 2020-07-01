@@ -20,8 +20,9 @@
 
     <View
         android:id="@+id/line"
-        android:layout_height="100dp"
-        android:layout_width="20dp"
-        android:layout_below="@+id/baslik"></View>
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/baslik"
+        android:background="@color/colorAccent"></View>
 
 </RelativeLayout>

@@ -9,8 +9,19 @@
     <TextView
         android:id="@+id/baslik"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:text="Running Packages"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
         ></TextView>
+
+    <View
+        android:id="@+id/line"
+        android:layout_height="100dp"
+        android:layout_width="20dp"
+        android:layout_below="@+id/baslik"></View>
 
 </RelativeLayout>

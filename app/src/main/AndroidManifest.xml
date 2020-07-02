@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RunningPackagesActivity"></activity>
+        <activity android:name=".CleanCacheActivity"></activity>
+        <activity android:name=".RunningPackagesActivity" />
         <activity android:name=".PhoneFeaturesActivity" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity">

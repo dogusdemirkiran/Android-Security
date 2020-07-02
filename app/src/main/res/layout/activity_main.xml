@@ -43,5 +43,14 @@
         android:onClick="showPhoneFeatures"
         />
 
+    <Button
+        android:id="@+id/cleanCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showPhoneFeatures"
+        android:text="Clean Cache"
+        android:onClick="cleanCache"
+        />
+
 
 </RelativeLayout>

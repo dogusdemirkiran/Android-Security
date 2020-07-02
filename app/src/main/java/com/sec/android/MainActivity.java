@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button showRunningProcessButton;
     private Button showPhoneFeaturesButton;
-
+    private Button cleanCacheButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         showRunningProcessButton = findViewById(R.id.showRunProcess);
         showPhoneFeaturesButton = findViewById(R.id.showPhoneFeatures);
+        cleanCacheButton = findViewById(R.id.cleanCache);
 /*
         showRunningProcessButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
     public void showPhoneFeatures(View view){
         Toast.makeText(getApplicationContext(),"Phone Features",Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(MainActivity.this,PhoneFeaturesActivity.class);
+        startActivity(intent);
+    }
+
+    public void cleanCache(View view){
+        Toast.makeText(getApplicationContext(),"Clean Cache",Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(MainActivity.this,CleanCacheActivity.class);
         startActivity(intent);
     }
 
